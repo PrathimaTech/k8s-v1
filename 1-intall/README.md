@@ -4,7 +4,7 @@
 ```
 ## Install Docker,kubeadm,kubelet,kubectl
 
-sudo wget https://raw.githubusercontent.com/lerndevops/labs/master/scripts/installK8S-v1-23.sh -P /tmp
+sudo wget https://raw.githubusercontent.com/PrathimaTech/labs/master/scripts/installK8S-v1-23.sh -P /tmp
 sudo chmod 755 /tmp/installK8S-v1-23.sh
 sudo bash /tmp/installK8S-v1-23.sh
 
@@ -28,7 +28,7 @@ sudo bash /tmp/installK8S-v1-23.sh
 ```
 ## Install Docker,kubeadm,kubelet
 
-sudo wget https://raw.githubusercontent.com/lerndevops/labs/master/scripts/installK8S-v1-23.sh -P /tmp
+sudo wget https://raw.githubusercontent.com/PrathimaTech/labs/master/scripts/installK8S-v1-23.sh -P /tmp
 sudo chmod 755 /tmp/installK8S-v1-23.sh
 sudo bash /tmp/installK8S-v1-23.sh
 
@@ -55,7 +55,7 @@ kubeadm token create --print-join-command
     sudo apt-get update ; clear
     sudo apt-get install -y docker-ce
     
-    sudo wget https://raw.githubusercontent.com/lerndevops/labs/master/kubernetes/0-install/daemon.json -P /etc/docker
+    sudo wget https://raw.githubusercontent.com/PrathimaTech/labs/master/kubernetes/0-install/daemon.json -P /etc/docker
     sudo systemctl restart docker.service
     sudo service docker status
    
@@ -94,7 +94,7 @@ kubeadm token create --print-join-command
     sudo apt-get update ; clear
     sudo apt-get install -y docker-ce
     
-    sudo wget https://raw.githubusercontent.com/lerndevops/labs/master/kubernetes/0-install/daemon.json -P /etc/docker
+    sudo wget https://raw.githubusercontent.com/PrathimaTech/labs/master/kubernetes/0-install/daemon.json -P /etc/docker
     sudo systemctl restart docker.service
     sudo service docker status
    
