@@ -4,12 +4,14 @@ metadata:
   name: pvc-pod
 spec:
   containers:
-   - name: myvolumes-container
-     image: tomcat:8.5
-     volumeMounts:
-      - name: pv
-        mountPath: "/usr/local/tomcat/logs"
+    - name: myvolumes-container
+      image: alpine
+      imagePullPolicy: IfNotPresent
+      command: ['sh', '-c', 'echo Container 1 is Running ; sleep 3600']
+      volumeMounts:
+        - name: pv
+          mountPath: "/my-pv-path"
   volumes:
-   - name: pv
-     persistentVolumeClaim:
-       claimName: my-pvc
+    - name: pv
+      persistentVolumeClaim:
+        claimName: my-pvc
